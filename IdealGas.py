@@ -10,8 +10,8 @@ import matplotlib.pyplot as plt
 
 class IdealGas:
 
-    def __init__(self, nparticles, mass, radius, x1,x2, y1,y2, t):
-        """"""        self.nparticles = nparticles #number of particles 
+    def __init__(self, nparticles, mass, radius, x1,x2, y1,y2, t):   
+        self.nparticles = nparticles #number of particles 
         self.mass = mass #mass of particles kg
         self.radius = radius #radius of particles m 
         self.x1 = x1 #boundaries of the container, all in m
