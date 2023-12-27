@@ -27,16 +27,17 @@ The idea behind the algorithm to run the simulation is simple:
 * Fix the number of particles, the size of the container and length of simulation.
 * Initialize their positions and velocities at time $t=0$. 
 * At each time step: check if some of the particles are colliding with one another/the wall. If so, update their velocities accounting for the conservation of energy + momentum.
-* Once the velocities have been updated, we get the positions of the particles at the next step: $\bold r(t+\Delta t) = \bold r(t) + \bold v(t) \Delta t$.
+* Once the velocities have been updated, we get the positions of the particles at the next step: $\vec r(t+\Delta t) = \vec r(t) + \vec v(t) \Delta t$.
 
 ## Collisions 
 ### Particle-particle collisions
 We use the following formula for updating the velocities of the particles that are colliding:
 
-$$ \bold v_i' = \bold v_i - \frac{(\bold v_i - \bold v_j) \cdot (\bold r_i - \bold r_j)}{(\bold r_i - \bold r_j) \cdot (\bold r_i - \bold r_j)} (\bold r_i - \bold r_j) $$
-$$ \bold v_j' = \bold v_j - \frac{(\bold v_j - \bold v_i) \cdot (\bold r_j - \bold r_i)}{(\bold r_j - \bold r_i) \cdot (\bold r_i - \bold r_j)} (\bold r_j - \bold r_i) $$ 
+$$ \vec v_i' = \vec v_i - \frac{(\vec v_i - \vec v_j) \cdot (\vec r_i - \vec r_j)}{(\vec r_i - \vec r_j) \cdot (\vec r_i - \vec r_j)} (\vec r_i - \vec r_j) $$
+$$ \vec v_j' = \vec v_j - \frac{(\vec v_j - \vec v_i) \cdot (\vec r_j - \vec r_i)}{(\vec r_j - \vec r_i) \cdot (\vec r_i - \vec r_j)} (\vec r_j - \vec r_i) $$ 
 
 Source: [wikipedia](https://en.wikipedia.org/wiki/Elastic_collision)
 
 ### Particle-wall collisions
 When a particle collides with one of the walls, we invert the component of its velocity that is orthogonal to the wall. 
+
