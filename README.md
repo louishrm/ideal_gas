@@ -2,7 +2,7 @@
 
 The purpose of this project is to write a Python code that animate sa 2D ideal gas of $N$ particles evolving in a square box. 
 We check that the speeds of the particles at equilibrium follow the **Maxwell-Boltzmann distribution**. 
-Check out [this video] on my [channel](https://www.youtube.com/channel/UCrD42YxJdVEKl-9-iER80hA) which explains the code in detail. 
+Check out [this video](https://www.youtube.com/watch?v=Gn5QoDCDGgo&t=193s) on my [channel](https://www.youtube.com/channel/UCrD42YxJdVEKl-9-iER80hA) which explains the code in detail. 
 
 
 ## The Maxwell-Boltzmann distribution
